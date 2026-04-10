@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Student Expense Tracker</h2>
+
+    <h3>Balance: ₹<span id="balance">0</span></h3>
+
+    <form id="form">
+        <input type="text" id="text" placeholder="Description" required>
+        <input type="number" id="amount" placeholder="Amount" required>
+
+        <select id="category">
+            <option>Food</option>
+            <option>Travel</option>
+            <option>Study</option>
+            <option>Others</option>
+        </select>
+
+        <input type="date" id="date" required>
+
+        <button>Add Expense</button>
+    </form>
+
+    <ul id="list"></ul>
+
+    <h3>Monthly Report</h3>
+    <canvas id="myChart"></canvas>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
